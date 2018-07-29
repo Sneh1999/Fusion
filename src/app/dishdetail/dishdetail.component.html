@@ -1,42 +1,23 @@
-<!-- <div class="container" fxLayout="row" > -->
+<!-- <div class="container" fxLayout="row wrap" >
 
+  <div fxFlex>
+    <div>
+      <h3>{{dish.name | uppercase}}</h3>
+      <hr>
+    </div>
+  </div>
+  
+  <div fxFlex>
+    <mat-grid-list cols="2" rowHeight="200px">
+      <mat-grid-tile *ngIf='dish'></mat-grid-tile> >
+      
+        <h1 matLine>{{dish.name | uppercase}}</h1>
+      
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
 
-<!-- <div fxFlex='40' >
-  <mat-card *ngIf="dish">
-    <mat-card-header>
-      <mat-card-title>
-        <h3>{{dish.name | uppercase}}</h3>
-      </mat-card-title>
-    </mat-card-header>
-   
-    <mat-card-content>
-      <img mat-card-image src={{dish.image}} alt={{dish.name}} />
-      <p>{{dish.description}}
-      </p>
-    </mat-card-content>
-  </mat-card>
-    
-</div>
-
-<div fxFlex='40'>
-  <md-list *ngIf='dish'>
-    <h3>Comments</h3>
-    <md-list-item *ngFor="let comment of dish.comments">
-      <h4 md-line>{{comment.comment}}</h4>
-      <p md-line>{{comment.rating}} Stars</p>
-      <p md-line>
-        <span>
-          -- {{comment.author}} {{comment.date | date}}
-        </span>
-      </p>
-    </md-list-item>
-  </md-list>
-</div>
-</div> -->
-<!-- <p>
-  <md-list *ngIf="dish">
-    <p>
-      Hello
-    </p>
-  </md-list>
-</p> -->
+  </div> -->
+  <p>
+    hello
+  </p>

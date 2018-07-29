@@ -11,7 +11,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { AppRoutingModule } from "./app-routing/app-routing.module";
 import { DishService } from "./services/dish.service";
 import { PromotionService } from "./services/promotion.service";
-
+import { MatDialogModule } from "@angular/material/dialog";
 import "hammerjs";
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
@@ -20,21 +20,33 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { LoginComponent } from './login/login.component';
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
+import { MatCheckboxModule } from "@angular/material/checkbox";
+import { FormsModule } from "@angular/forms"; 
 @NgModule({
-  declarations: [AppComponent, MenuComponent, DishdetailComponent, HeaderComponent, FooterComponent, AboutComponent, HomeComponent, ContactComponent],
+  declarations: [AppComponent, MenuComponent, DishdetailComponent, HeaderComponent, FooterComponent, AboutComponent, HomeComponent, ContactComponent, LoginComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatToolbarModule,
     MatGridListModule,
+    MatDialogModule,
     MatCardModule,
     MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule,
     MatListModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule 
   ],
   providers: [DishService,PromotionService],
+  entryComponents: [
+    LoginComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
