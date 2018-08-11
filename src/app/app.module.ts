@@ -25,6 +25,7 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { FormsModule } from "@angular/forms"; 
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [AppComponent, MenuComponent, DishdetailComponent, HeaderComponent, FooterComponent, AboutComponent, HomeComponent, ContactComponent, LoginComponent],
   imports: [
@@ -41,6 +42,7 @@ import { FormsModule } from "@angular/forms";
     MatCheckboxModule,
     MatListModule,
     AppRoutingModule,
+     ReactiveFormsModule,
     FormsModule 
   ],
   providers: [DishService,PromotionService],
