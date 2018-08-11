@@ -26,11 +26,13 @@ import { MatInputModule } from "@angular/material/input";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { FormsModule } from "@angular/forms"; 
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 @NgModule({
   declarations: [AppComponent, MenuComponent, DishdetailComponent, HeaderComponent, FooterComponent, AboutComponent, HomeComponent, ContactComponent, LoginComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MatProgressSpinnerModule,
     FlexLayoutModule,
     MatToolbarModule,
     MatGridListModule,
