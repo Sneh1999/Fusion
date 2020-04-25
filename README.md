@@ -1,2 +1,1 @@
-# Website-using-Angular
-A website using angular cli
+# A sample restaurant website using Typescript and Angular-JS
